@@ -1,6 +1,6 @@
 ---
 - name: apply non-kernel updates
-  hosts: "{{ HOSTS | default('demo') }}"
+  hosts: "{{ HOSTS | default('all') }}"
   become: true
   gather_facts: false
 
